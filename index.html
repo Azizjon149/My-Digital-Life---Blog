@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-palette="coral">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d16">
+  <meta name="description" content="MY WORLD · BY AZIZJON — a personal digital journal about everyday life, technology, creativity and ideas in progress.">
+  <meta name="color-scheme" content="dark light">
+  <title>MY WORLD · BY AZIZJON — Personal Digital Journal</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-fill"></span></div>
+  <div class="pointer-aura" id="pointer-aura" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <div class="intro" id="intro" aria-label="Welcome to My World" aria-hidden="true">
+    <div class="intro-backdrop"></div>
+    <div class="intro-glass"></div>
+    <div class="intro-content">
+      <div class="intro-brand"><span class="brand-mark">A<span>.</span></span><span class="mono">DIGITAL JOURNAL / 001</span></div>
+      <p class="eyebrow intro-kicker"><span class="status-dot"></span> A PERSONAL SPACE ON THE INTERNET</p>
+      <div class="identity-flash" aria-label="Assan and Azizjon"><span>ASSAN</span><i>×</i><span>AZIZJON</span></div><h1 class="intro-title">A little world.<br><em>A lot of ideas.</em></h1>
+      <p class="intro-copy">Life in progress, things I make, and what I discover along the way.</p>
+      <button class="button button-primary glow-button" id="enter-world" type="button"><span>Enter my world</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+      <div class="intro-foot"><span>DESIGNED TO EXPLORE</span><button class="intro-skip" id="skip-intro" type="button">Skip intro <span aria-hidden="true">↗</span></button><span>SCROLL / DISCOVER</span></div>
+    </div>
+    <div class="intro-orb intro-orb-a"></div><div class="intro-orb intro-orb-b"></div>
+  </div>
+
+  <header class="site-header" id="home">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="My World by Azizjon, home">
+        <span class="brand-mark">A<span>.</span></span>
+        <span class="brand-wording">MY WORLD <small>BY AZIZJON</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#home">Home</a>
+        <a class="nav-link" href="#journal">Journal</a>
+        <a class="nav-link" href="#digital-life">Projects</a>
+        <a class="nav-link" href="#moments">Moments</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+      <div class="header-tools">
+        <button class="round-tool palette-toggle" id="palette-toggle" type="button" aria-label="Change accent palette" title="Change accent palette"><span class="palette-swatch" aria-hidden="true"></span></button>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">LIGHT</span></button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"><img src="assets/images/generated/hero-background.jpg" alt="" fetchpriority="high"><div class="hero-image-shade"></div></div>
+      <div class="hero-topline reveal"><span class="eyebrow"><span class="eyebrow-number">01</span> NOTES FROM MY WORLD</span><span class="mono micro hero-live"><span class="status-dot"></span> ONLINE / FIGURING IT OUT</span></div>
+      <div class="hero-main">
+        <div class="hero-copy reveal">
+          <p class="hero-overline"><span class="overline-line"></span> HELLO, I'M AZIZJON</p>
+          <h1 id="hero-title" class="hero-title"><span>MY WORLD</span><span class="hero-title-second">BY <em>AZIZJON</em><b>.</b></span></h1>
+          <p class="hero-intro">A personal space for everyday life, digital experiments, little discoveries, and ideas I want to bring to life.</p>
+          <div class="hero-actions">
+            <a class="button button-primary glow-button" href="#journal"><span>Explore my journal</span><span class="button-arrow" aria-hidden="true">↘</span></a>
+            <button class="button button-glass glow-button" type="button" id="watch-intro"><span class="play-symbol" aria-hidden="true">▶</span><span>Take a look around</span></button>
+          </div>
+          <div class="hero-proof"><div class="avatar-stack" aria-hidden="true"><span>A</span><span>✦</span><span>↗</span></div><p><strong>Curious by default.</strong><br><span>Always learning, making, improving.</span></p></div>
+        </div>
+        <div class="hero-side reveal">
+          <div class="hero-quote glass-card" data-tilt>
+            <div class="quote-top"><span class="mono micro">A THOUGHT FOR TODAY</span><span class="quote-orb" aria-hidden="true"></span></div>
+            <p class="quote-text" id="hero-quote">“Small steps can take you somewhere unexpected.”</p>
+            <div class="quote-foot"><span class="signature">— Azizjon</span><button class="icon-button glow-button" type="button" id="new-quote" aria-label="Show another thought" title="Another thought">⟳</button></div>
+          </div>
+          <div class="mini-now glass-card" data-tilt>
+            <div class="mini-now-icon" aria-hidden="true"><span>✦</span></div>
+            <div class="mini-now-copy"><span class="mono micro">RIGHT HERE, RIGHT NOW</span><strong id="live-clock">GOOD THINGS TAKE TIME</strong><small id="live-date">A PERSONAL JOURNAL</small></div>
+            <span class="live-pulse" aria-hidden="true"></span>
+          </div>
+          <div class="floating-orbit orbit-one" aria-hidden="true"><span>✦</span></div><div class="floating-orbit orbit-two" aria-hidden="true"><span>+</span></div>
+        </div>
+      </div>
+      <div class="hero-bottomline reveal"><span class="mono micro">LIFE / TECHNOLOGY / CREATIVITY</span><a href="#journal" class="scroll-cue"><span class="scroll-cue-mouse"><i></i></span><span>SCROLL TO EXPLORE</span></a><button class="sound-toggle" id="vibe-toggle" type="button" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span id="vibe-label">VISUAL VIBE / OFF</span></button></div>
+    </section>
+
+    <section class="ticker" aria-label="Topics"><div class="ticker-track"><span>CURIOUS BY DEFAULT <b>✳</b></span><span>IDEAS INTO PROJECTS <b>✳</b></span><span>LEARN / MAKE / REPEAT <b>✳</b></span><span>SMALL THINGS MATTER <b>✳</b></span><span>CURIOUS BY DEFAULT <b>✳</b></span><span>IDEAS INTO PROJECTS <b>✳</b></span><span>LEARN / MAKE / REPEAT <b>✳</b></span><span>SMALL THINGS MATTER <b>✳</b></span></div></section>
+
+    <section class="journal-section section-shell" id="journal" aria-labelledby="journal-title">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-number">01—03</span> THE JOURNAL</p><h2 id="journal-title">A few things <em>worth sharing.</em></h2></div><div class="heading-side"><p class="section-note">Everyday rhythms, digital experiments, and the little things that make a day feel like mine.</p><a class="quiet-link glow-button" href="#typical-day">Read from the start <span aria-hidden="true">↘</span></a></div></div>
+      <div class="filter-row reveal"><span class="mono micro">BROWSE BY MOOD</span><div class="filter-chips" role="group" aria-label="Filter journal cards"><button type="button" class="filter-chip is-selected" data-filter="all" aria-pressed="true">Everything <span>03</span></button><button type="button" class="filter-chip" data-filter="life" aria-pressed="false">Life</button><button type="button" class="filter-chip" data-filter="making" aria-pressed="false">Making</button><button type="button" class="filter-chip" data-filter="inspiration" aria-pressed="false">Inspiration</button></div></div>
+      <div class="post-grid">
+        <article class="post-card reveal" data-category="life" data-tilt><a class="post-visual" href="#typical-day" aria-label="Read My Typical Day"><img src="assets/images/generated/post-typical-day.jpg" alt="Soft sunrise through a window, a notebook and coffee on a desk" loading="lazy"><span class="image-sheen" aria-hidden="true"></span><span class="visual-number">01</span><span class="visual-tag">LIFE NOTES</span><span class="visual-go" aria-hidden="true">↗</span></a><div class="post-card-copy"><div class="card-meta mono"><span>ROUTINE</span><span>3 MIN READ</span></div><h3><a href="#typical-day">My Typical Day</a></h3><p>Finding a rhythm between school, learning, and personal goals.</p><a class="card-cta glow-button" href="#typical-day">Open story <span aria-hidden="true">↗</span></a></div></article>
+        <article class="post-card reveal" data-category="making" data-tilt><a class="post-visual" href="#digital-life" aria-label="Read My Digital Life"><img src="assets/images/generated/post-digital-life.jpg" alt="A colorful creative workspace with a monitor showing lines of code" loading="lazy"><span class="image-sheen" aria-hidden="true"></span><span class="visual-number">02</span><span class="visual-tag">IN THE MAKING</span><span class="visual-go" aria-hidden="true">↗</span></a><div class="post-card-copy"><div class="card-meta mono"><span>CREATION</span><span>4 MIN READ</span></div><h3><a href="#digital-life">My Digital Life: Turning Ideas into Projects</a></h3><p>How design and technology help a small idea become something real.</p><a class="card-cta glow-button" href="#digital-life">Open story <span aria-hidden="true">↗</span></a></div></article>
+        <article class="post-card reveal" data-category="inspiration" data-tilt><a class="post-visual" href="#happiness" aria-label="Read Things That Make Me Happy"><img src="assets/images/generated/post-happy.jpg" alt="City buildings and lights reflected during a warm sunset" loading="lazy"><span class="image-sheen" aria-hidden="true"></span><span class="visual-number">03</span><span class="visual-tag">SMALL JOYS</span><span class="visual-go" aria-hidden="true">↗</span></a><div class="post-card-copy"><div class="card-meta mono"><span>INSPIRATION</span><span>3 MIN READ</span></div><h3><a href="#happiness">Things That Make Me Happy</a></h3><p>Games, music, and the pleasure of imagining what could exist.</p><a class="card-cta glow-button" href="#happiness">Open story <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+      <p class="filter-empty" id="filter-empty" hidden>No stories in this mood yet. Try another filter.</p>
+    </section>
+
+    <section class="feature-section section-shell" id="typical-day" aria-labelledby="day-title">
+      <div class="feature-image reveal" data-tilt><img src="assets/images/generated/post-typical-day.jpg" alt="A notebook and a cup by a sunlit window" loading="lazy"><div class="image-label glass-card"><span class="mono micro">FRAME 01 / 03</span><strong>Make room for the day.</strong></div><span class="feature-corner" aria-hidden="true">✳</span></div>
+      <article class="feature-copy reveal"><p class="eyebrow"><span class="eyebrow-number">01</span> EVERYDAY NOTES</p><h2 id="day-title">A day with <em>a little rhythm.</em></h2><p class="article-lead">A routine is not about making every day identical. It is about finding a rhythm that works.</p><div class="article-copy"><p>My day starts at 6:30. At school, my favourite subjects are English, Computer Science, and Russian.</p><p>My routine changes during the week: on some days I go to the gym, while on others I attend English lessons. I like having different goals to work towards.</p><p>A good routine helps me balance school, learning, and the projects I enjoy. Progress can come from small steps repeated over time.</p></div><div class="inline-note"><span class="note-mark">A.</span><span class="mono micro">THE DAY IS BUILT ONE STEP AT A TIME.</span></div><a class="button button-outline glow-button" href="#digital-life"><span>Next: digital life</span><span class="button-arrow" aria-hidden="true">↘</span></a></article>
+    </section>
+
+    <section class="feature-section feature-reverse section-shell" id="digital-life" aria-labelledby="digital-title">
+      <article class="feature-copy reveal"><p class="eyebrow"><span class="eyebrow-number">02</span> BUILDING WITH IDEAS</p><h2 id="digital-title">Turn a thought <em>into something.</em></h2><p class="article-lead">Technology is not only something I use. It is also a way to create.</p><div class="article-copy"><p>I enjoy technology, games, design, and programming because they let me turn ideas into something useful. One of my main projects is Ada Payment, created for the Ada Mobile store.</p><p>I used AI to help during development, but I designed and configured the system myself. It includes servers, products, sales, analytics, accounts, and detailed customisation. I am proud of the work behind it.</p><p>I also have PhotoForge and Asepriid, my pixel art editor. Each project gives me another way to explore what an idea can become.</p></div><div class="project-tags"><button type="button" class="tag-pill" data-project-note="Ideas become clearer when I make a first version.">IDEAS <span>↗</span></button><button type="button" class="tag-pill" data-project-note="Design is the part that makes a tool feel human.">DESIGN <span>↗</span></button><button type="button" class="tag-pill" data-project-note="Building means testing, learning, and trying again.">BUILD <span>↗</span></button><button type="button" class="tag-pill" data-project-note="Polishing the details is where an okay project becomes a good one.">REFINE <span>↗</span></button></div><div class="feature-actions"><a class="button button-primary glow-button" href="#moments"><span>See the visual diary</span><span class="button-arrow" aria-hidden="true">↘</span></a><button class="icon-button icon-button-large glow-button" type="button" id="copy-project-note" title="Save this thought" aria-label="Show a project note">✦</button></div></article>
+      <div class="feature-image feature-image-tall reveal" data-tilt><img src="assets/images/generated/post-digital-life.jpg" alt="A colorful monitor and creative tools on a desk" loading="lazy"><div class="project-float glass-card"><span class="mono micro">CURRENTLY EXPLORING</span><strong>IDEA → PROTOTYPE → REFINE</strong><div class="project-progress"><span></span><span></span><span></span></div></div><div class="image-label glass-card"><span class="mono micro">FRAME 02 / 03</span><strong>Build what you wish existed.</strong></div></div>
+    </section>
+
+    <section class="feature-section feature-happiness section-shell" id="happiness" aria-labelledby="happy-title">
+      <div class="feature-image reveal" data-tilt><img src="assets/images/generated/abstract-sound-waves.jpg" alt="A luminous abstract music visualizer with flowing colored waveforms" loading="lazy"><div class="image-label glass-card"><span class="mono micro">FRAME 03 / 03</span><strong>Find your own frequency.</strong></div><div class="wave-sticker" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <article class="feature-copy reveal"><p class="eyebrow"><span class="eyebrow-number">03</span> SMALL JOYS</p><h2 id="happy-title">A few things that <em>make me, me.</em></h2><p class="article-lead">A mix of entertainment, curiosity, and the freedom to imagine.</p><div class="article-copy"><p>Games and music help make my free time enjoyable, but projects are another big source of happiness. I often think of new ideas and wonder how they could become real products.</p><p>Sometimes the most interesting part is exploring possibilities, learning something new, and improving a design step by step.</p><p>I like that creativity can begin with a small thought and grow into something I can share. For me, that feeling of discovery is a reason to keep experimenting.</p></div><button class="button button-outline glow-button" type="button" id="mood-button"><span>Give me a little inspiration</span><span class="button-arrow" aria-hidden="true">✦</span></button><p class="mood-result" id="mood-result" aria-live="polite">A small reminder will appear here.</p></article>
+    </section>
+
+    <section class="moments-section section-shell" id="moments" aria-labelledby="moments-title">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-number">04</span> THE VISUAL DIARY</p><h2 id="moments-title">Little windows <em>into the world.</em></h2></div><div class="heading-side"><p class="section-note">Color, light, and the places where new thoughts start. Tap any frame to open it.</p><button class="quiet-link glow-button" id="shuffle-gallery" type="button">Shuffle the frames <span aria-hidden="true">⟳</span></button></div></div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-large reveal" type="button" data-image="assets/images/generated/hero-background.jpg" data-caption="Somewhere between quiet and possibility." data-tilt><img src="assets/images/generated/hero-background.jpg" alt="A cinematic mountain lake at sunset with a tiny explorer" loading="lazy"><span class="gallery-overlay"><span class="mono micro">01 / WIDE OPEN</span><strong>Somewhere to think.</strong><span class="gallery-open">↗</span></span></button>
+        <button class="gallery-item gallery-top reveal" type="button" data-image="assets/images/generated/abstract-ideas.jpg" data-caption="Ideas tend to connect when you give them space." data-tilt><img src="assets/images/generated/abstract-glass-orb.jpg" alt="A glowing iridescent sphere crossed by delicate orbital lines" loading="lazy"><span class="gallery-overlay"><span class="mono micro">02 / IDEAS</span><strong>Connect the dots.</strong><span class="gallery-open">↗</span></span></button>
+        <button class="gallery-item gallery-bottom reveal" type="button" data-image="assets/images/generated/post-happy.jpg" data-caption="A new perspective can come from the most familiar place." data-tilt><img src="assets/images/generated/post-happy.jpg" alt="A city skyline glowing in the last light of the day" loading="lazy"><span class="gallery-overlay"><span class="mono micro">03 / PERSPECTIVE</span><strong>See it differently.</strong><span class="gallery-open">↗</span></span></button>
+        <button class="gallery-item gallery-wide reveal" type="button" data-image="assets/images/generated/abstract-sound-waves.jpg" data-caption="Find a sound, color, or rhythm that feels like you." data-tilt><img src="assets/images/generated/abstract-sound-waves.jpg" alt="Colorful abstract rings and audio waves" loading="lazy"><span class="gallery-overlay"><span class="mono micro">04 / FREQUENCY</span><strong>Find your frequency.</strong><span class="gallery-open">↗</span></span></button>
+      </div>
+    </section>
+
+    <section class="conversation-section section-shell" id="conversation" aria-labelledby="conversation-title">
+      <div class="conversation-intro reveal"><p class="eyebrow"><span class="eyebrow-number">05</span> YOUR TURN</p><h2 id="conversation-title">Let's make this <em>a conversation.</em></h2><p>Everyone has a different routine and a different idea waiting to happen.</p><div class="conversation-orbit" aria-hidden="true"><span>?</span><i></i><i></i><i></i></div><button class="button button-glass glow-button" type="button" id="question-button"><span>Give me a question</span><span class="button-arrow" aria-hidden="true">↗</span></button><p id="question-result" class="question-result" aria-live="polite">A good question can start a great idea.</p></div>
+      <div class="reader-panel glass-card reveal" data-tilt><div class="reader-panel-header"><div class="prompt-mark">?</div><div><span class="mono micro">QUESTION FOR READERS</span><h3>If you could create any app, what would it do?</h3></div></div><p class="reader-description">It could solve a small everyday problem, help you learn something, or simply make life more fun.</p><div class="sample-comments"><p class="mono comments-label">SAMPLE READER COMMENTS <span>FICTIONAL EXAMPLES</span></p><article class="comment"><div class="comment-avatar">M</div><div class="comment-content"><div class="comment-top"><strong>Mira</strong><span class="mono">EXAMPLE COMMENT 01</span></div><p>“I would make an app that helps me organise homework and remember deadlines.”</p><div class="author-reply"><span class="reply-line"></span><div><span class="mono reply-label">AZIZJON · REPLY</span><p>That would be genuinely useful. A clear plan can make a busy week feel easier to manage.</p></div></div></div></article><article class="comment"><div class="comment-avatar avatar-lilac">R</div><div class="comment-content"><div class="comment-top"><strong>Rayan</strong><span class="mono">EXAMPLE COMMENT 02</span></div><p>“I would create a simple pixel-art app where beginners can try making their first sprite.”</p><div class="author-reply"><span class="reply-line"></span><div><span class="mono reply-label">AZIZJON · REPLY</span><p>I like that idea. Starting with a small canvas makes a creative project feel approachable.</p></div></div></div></article></div><p class="comment-disclaimer">These two comments are fictional examples created for the school assignment, not real submissions.</p></div>
+    </section>
+
+    <section class="about-section section-shell" id="about" aria-labelledby="about-title">
+      <div class="about-card glass-card reveal"><div class="about-visual"><div class="about-orbit" aria-hidden="true"><span>A.</span><i></i><i></i><i></i></div><span class="mono micro about-stamp">EST. IN CURIOSITY</span><span class="about-spark spark-one">✦</span><span class="about-spark spark-two">+</span></div><div class="about-main"><p class="eyebrow"><span class="eyebrow-number">06</span> A LITTLE CONTEXT</p><h2 id="about-title">Hi, I'm <em>Azizjon.</em></h2><p class="about-lead">I'm an eighth-grade student who enjoys technology, games, music, and creative projects.</p><p>I like exploring new ideas and turning them into digital products. From working on Ada Payment to exploring other project ideas, I enjoy the process of shaping, testing, and improving something of my own.</p><p>This blog is a small window into my everyday life: the subjects I enjoy, the things I create, and what inspires me to keep learning.</p><div class="about-facts"><div><span class="mono">01 / LEARN</span><strong>English · Computer Science · Russian</strong></div><div><span class="mono">02 / CREATE</span><strong>Design · Programming · AI-assisted ideas</strong></div><div><span class="mono">03 / EXPLORE</span><strong>Games · Music · New projects</strong></div></div><div class="about-actions"><button class="button button-primary glow-button" id="copy-site-link" type="button"><span>Copy site link</span><span class="button-arrow" aria-hidden="true">⧉</span></button><button class="quiet-link glow-button" id="focus-toggle" type="button" aria-pressed="false">Quiet mode <span aria-hidden="true">◌</span></button></div></div></div>
+    </section>
+
+    <section class="reflection-section section-shell" aria-labelledby="reflection-title"><div class="reflection-stamp mono reveal">A NOTE TO SELF <span>·</span> 001</div><div class="reflection-content reveal"><p class="eyebrow">LOOKING BACK</p><h2 id="reflection-title">Ideas grow when <em>you work on them.</em></h2><p>Creating this blog is a reminder that a digital project is more than its final screen. It also includes the choices, experiments, and learning that happen along the way. I want to keep trying ideas, getting better at the things I care about, and turning curiosity into something real.</p><span class="reflection-signature">— Azizjon</span><div class="reflection-actions"><button class="icon-button icon-button-large glow-button" id="save-note" type="button" aria-pressed="false" aria-label="Save this note" title="Save this note">♡</button><button class="quiet-link glow-button" id="randomize-vibe" type="button">Change the vibe <span aria-hidden="true">✦</span></button></div></div><div class="reflection-art" aria-hidden="true"><img src="assets/images/generated/abstract-ideas.jpg" alt="" loading="lazy"></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="footer-brand" href="#home">MY WORLD <span>· BY AZIZJON</span></a><p>A small record of the things I'm learning, making, and wondering about.</p><a class="back-top glow-button" href="#home">Back to top <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><span class="mono">PERSONAL DIGITAL JOURNAL / <span id="footer-year">2026</span></span><div class="footer-links"><a href="#typical-day">ROUTINE</a><a href="#digital-life">PROJECTS</a><a href="#happiness">INSPIRATION</a><a href="#about">ABOUT</a></div><div class="footer-mini-tools"><button id="motion-toggle" type="button" class="quiet-link glow-button" aria-pressed="false">Motion: on <span aria-hidden="true">◌</span></button><button id="easter-toggle" type="button" class="quiet-link glow-button">One last secret <span aria-hidden="true">✦</span></button></div><span class="footer-colophon">Made with curiosity<span>.</span></span></div></footer>
+
+  <dialog class="image-viewer" id="image-viewer" aria-label="Image viewer"><form method="dialog"><button class="viewer-close icon-button glow-button" aria-label="Close image viewer">×</button></form><button class="viewer-arrow viewer-prev icon-button glow-button" id="viewer-prev" type="button" aria-label="Previous image">←</button><figure><img id="viewer-image" src="assets/images/generated/hero-background.jpg" alt=""><figcaption id="viewer-caption"></figcaption></figure><button class="viewer-arrow viewer-next icon-button glow-button" id="viewer-next" type="button" aria-label="Next image">→</button></dialog>
+  <div class="site-toast glass-card" id="site-toast" role="status" aria-live="polite"></div>
+  <button class="back-to-top-float glow-button" id="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+  <noscript><p class="noscript-note">JavaScript is disabled. The main journal, images, and section links remain available; interactive controls and motion effects require JavaScript.</p></noscript>
+</body>
+</html>
